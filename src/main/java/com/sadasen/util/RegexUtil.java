@@ -13,14 +13,14 @@ import java.util.regex.Pattern;
 public class RegexUtil implements Serializable {
 
 	private static final long serialVersionUID = -5534711164408640780L;
+	
+	private RegexUtil() {
+	}
 
 	public static boolean match(String rgx, String str) {
 		Pattern p = Pattern.compile(rgx);
 		Matcher m = p.matcher(str);
 		return m.matches();
-	}
-	
-	private RegexUtil() {
 	}
 	
 	public static void main(String[] args) {

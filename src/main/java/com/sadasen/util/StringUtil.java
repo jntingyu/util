@@ -11,6 +11,9 @@ import java.io.Serializable;
 public class StringUtil implements Serializable {
 	
 	private static final long serialVersionUID = -5787975877614020957L;
+	
+	private StringUtil() {
+	}
 
 	/**
 	 * 判断字符串是否为null或空
@@ -63,9 +66,6 @@ public class StringUtil implements Serializable {
 	 */
 	public static String ifEmpty(String string, String defaultString) {
 		return isEmpty(string) ? defaultString : string;
-	}
-	
-	private StringUtil() {
 	}
 
 }

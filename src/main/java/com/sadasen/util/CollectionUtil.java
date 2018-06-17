@@ -12,6 +12,9 @@ import java.util.Collection;
 public class CollectionUtil implements Serializable {
 	
 	private static final long serialVersionUID = -8798105551876918582L;
+	
+	private CollectionUtil() {
+	}
 
 	public static boolean isEmpty(Collection<?> coll) {
 		if(null==coll || coll.size()==0)
@@ -21,9 +24,6 @@ public class CollectionUtil implements Serializable {
 	
 	public static boolean isNotEmpty(Collection<?> coll) {
 		return !isEmpty(coll);
-	}
-	
-	private CollectionUtil() {
 	}
 
 }

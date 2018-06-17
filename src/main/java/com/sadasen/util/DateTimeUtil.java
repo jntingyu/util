@@ -9,14 +9,13 @@ import java.time.format.DateTimeFormatter;
  * @date 2018年3月8日
  * @author lei.ys
  * @addr company
- * @desc
+ * @desc java8+时间工具类
  */
 public class DateTimeUtil implements Serializable {
 	
 	private static final long serialVersionUID = -8907648564051445318L;
 	
 	private static final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-	
 	private static final DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
 	private DateTimeUtil() {

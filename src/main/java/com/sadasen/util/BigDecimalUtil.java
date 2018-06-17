@@ -1,15 +1,21 @@
 package com.sadasen.util;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
  * @date 2018年3月23日
  * @author lei.ys
  * @addr company
- * @desc
+ * @desc 精确算数
  */
-public class BigDecimalUtil {
+public class BigDecimalUtil implements Serializable {
 	
+	private static final long serialVersionUID = -4491751433043111041L;
+    
+    private BigDecimalUtil() {
+    }
+
 	/**
      * 提供精确的乘法运算
      *
